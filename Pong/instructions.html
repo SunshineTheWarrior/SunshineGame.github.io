@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Instructions </title>
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+		<script>
+			function start(){
+				sjs.open();
+
+				var instructions = new sjs.Text("INSTRUCTIONS", 28, "blue")
+				instructions.centerH()
+
+				var ins = new sjs.Text("Just use the left and right arrow keys to move, that's it.", 15, "blue");
+				ins.center();
+
+				var playButton = new sjs.Button("Play", function(){
+					window.location = "pong.html";
+				});
+				playButton.center().offset(0,50);
+
+			} //end start
+		</script>
+	</head>
+	<body onload="start()">
+		<h1> Instructions </h1>
+
+		<div id="target" style="margin:auto;background:grey;"></div>
+	</body>
+</html>

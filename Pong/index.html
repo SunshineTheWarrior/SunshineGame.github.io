@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title> Menu </title>
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+		<script>
+			function start(){
+				sjs.open();
+
+				// Menu
+				var menu = new sjs.Text("MENU", 28, "blue")
+				menu.centerH()
+
+				//Start Button
+				var start = new sjs.Button("Start", function(){
+					window.location = "instructions.html";
+				});
+				start.center();
+				var doubutton = new sjs.Button("Doubles", function(){
+					window.location = "instructions2.html";
+				})
+				doubutton.center().offset(0, 50);
+
+				//Information
+				var info = new sjs.Text("Created by Sunshine", 11, "black");
+				info.bottom().centerH();
+
+			} //end start
+		</script>
+	</head>
+	<body onload="start()">
+		<h1> Menu </h1>
+
+		<div id="target" style="margin:auto;background:grey;"></div>
+	</body>
+</html>
